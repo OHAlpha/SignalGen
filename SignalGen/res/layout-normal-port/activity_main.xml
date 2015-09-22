@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.nstech.oa.signalgen"
+    android:id="@+id/MainSP_LVTop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/MainSP_LH"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/MainSP_LVOptions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="25dp" >
+
+            <TextView
+                android:id="@+id/PresetsLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/presets_list"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/Preset1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preset1_name" />
+
+            <Button
+                android:id="@+id/Preset2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preset2_name" />
+
+            <Button
+                android:id="@+id/Preset3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preset3_name" />
+
+            <Button
+                android:id="@+id/Preset4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preset4_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MainSP_LVPlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="25dp" >
+
+            <TextView
+                android:id="@+id/PlayOptions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/play_options"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/PlayButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/play_label" />
+            
+            <com.nstech.oa.signalgen.ui.Slider
+                android:id="@+id/VolumeSlider"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                app:grooveThickness="10"
+                app:orientation="vertical" />
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/Console"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/console_background"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/StatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/FrequencyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/preset1_name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/status_idle"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/DisplaySize"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:text="@string/display_norm"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/DisplayOrientation"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:text="@string/display_port"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+</LinearLayout>

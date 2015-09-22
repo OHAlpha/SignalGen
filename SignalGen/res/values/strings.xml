@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Signal Gen Test</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="presets_list">Frequencies</string>
+    <string name="preset0_name">-</string>
+    <string name="preset1_name">Very High</string>
+    <string name="preset2_name">High</string>
+    <string name="preset3_name">Medium</string>
+    <string name="preset4_name">Low</string>
+    <string name="play_options">Play</string>
+    <string name="play_label">Play</string>
+    <string name="stop_label">Stop</string>
+    <string name="status_idle">Idle</string>
+    <string name="status_playing">Playing</string>
+
+</resources>

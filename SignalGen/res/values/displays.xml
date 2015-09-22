@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_small">Size: Small</string>
+    <string name="display_norm">Size: Normal</string>
+    <string name="display_large">Size: Large</string>
+    <string name="display_XLarge">Size: Extra Large</string>
+    <string name="display_port">Orientation: Portrait</string>
+    <string name="display_land">Orientation: Landscape</string>
+</resources>

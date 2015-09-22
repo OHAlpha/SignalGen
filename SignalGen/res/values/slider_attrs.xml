@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Slider">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="grooveColor" format="color"/>
+        <attr name="knobColor" format="color"/>
+        <attr name="knobOpacity" format="integer"/>
+        <attr name="grooveDisabledColor" format="color"/>
+        <attr name="knobDisabledColor" format="color"/>
+        <attr name="knobDisabledOpacity" format="integer"/>
+        <attr name="grooveThickness" format="float"/>
+        <attr name="sliderMaximum" format="float"/>
+        <attr name="sliderMinimum" format="float"/>
+        <attr name="sliderInitial" format="float"/>
+    </declare-styleable>
+</resources>
