@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<script src="jquery-2.1.4.min_com_prod.js"></script>
+<script>
+	wavedir = ""
+	function setwave(url) {
+		wavedir = url;
+		$('#asrc').attr('src', wavedir + '/wave0.wav')
+		$('#dir').text(wavedir)
+	}
+</script>
+<body>
+	<audio controls>
+		<source id="asrc" src="wave0.wav" type="audio/wav">
+	</audio>
+	<p id="dir"></p>
+</body>
+</html>
